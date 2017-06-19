@@ -18,3 +18,9 @@ services:
     command: mongod --replSet rs1 --noprealloc --smallfiles
     ports:
       - "30003:27017"
+  mongoa001:
+    container_name: mongoa001
+    image: mongo:3.4.5
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+    ports:
+      - "30004:27017"
